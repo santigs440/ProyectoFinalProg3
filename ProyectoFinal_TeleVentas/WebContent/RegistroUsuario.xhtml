@@ -27,6 +27,9 @@
 		<h:outputLabel for="NombreReal" class="label">Nombre Real</h:outputLabel>
 		<h:inputText id="NombreReal" type="text"  value="#{usuario.nombrereal}"/><br/>
 		
+		<h:outputLabel for="CodigoSeguridad" class="label">Codigo de seguridad</h:outputLabel>
+		<h:inputText id="CodigoSeguridad" type="number"  value="#{usuario.codigoseguridad}"/><br/>
+		
 		<h:commandButton value="Iniciar sesión" action="#{usuario.registro}"></h:commandButton>
 		
 	</h:form>

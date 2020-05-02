@@ -24,6 +24,7 @@ public class Usuario {
 	private String entidadbancaria;
 	private String fechatarjeta;
 	private String nombrereal;
+	private int codigoseguridad;
 	
 	public Usuario() {
 		
@@ -32,6 +33,14 @@ public class Usuario {
 	
 	public String getFechatarjeta() {
 		return fechatarjeta;
+	}
+
+	public int getCodigoseguridad() {
+		return codigoseguridad;
+	}
+
+	public void setCodigoseguridad(int codigoseguridad) {
+		this.codigoseguridad = codigoseguridad;
 	}
 
 	public void setFechatarjeta(String fechatarjeta) {
