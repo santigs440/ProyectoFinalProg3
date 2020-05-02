@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:c="http://xmlns.jcp.org/jsf/core"
+      xmlns:e="http://java.sun.com/jsp/jstl/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets" 
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<title>Registro usuario</title>
+</h:head>
+<h:body>
+	<c:view>
+	<h:form rendered="true">          
+		<h:outputLabel for="usuario" class="label">Usuario</h:outputLabel>
+		<h:inputText id="usuario" type="text"  value="#{usuario.usuario}"/><br/>
+		
+		<h:outputLabel for="contraseña" class="label">Contraseña</h:outputLabel>
+		<h:inputSecret id="contraseña" value="#{usuario.contraseña}"/><br/>	
+		
+		<h:outputLabel for="EntidadBancaria" class="label">Entidad Bancaria</h:outputLabel>
+		<h:inputText id="EntidadBancaria" type="text"  value="#{usuario.entidadbancaria}"/><br/>
+		
+		<h:outputLabel for="FechaTarjeta" class="label">Fecha de Caducidad</h:outputLabel>
+		<h:inputText id="FechaTarjeta" type="text"  value="#{usuario.fechatarjeta}"/><br/>
+		
+		<h:outputLabel for="NombreReal" class="label">Nombre Real</h:outputLabel>
+		<h:inputText id="NombreReal" type="text"  value="#{usuario.nombrereal}"/><br/>
+		
+		<h:commandButton value="Iniciar sesión" action="#{usuario.registro}"></h:commandButton>
+		
+	</h:form>
+	</c:view>
+</h:body>
+</html>
